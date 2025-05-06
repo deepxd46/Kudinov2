@@ -12,7 +12,7 @@ body {
 /* Стиль для шапки сайта */
 header {
     background-color: #333;
-    height: 10%;
+    height: 15%; /* Увеличиваем высоту шапки */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,14 +29,14 @@ nav ul {
 
 nav ul li {
     text-align: center;
-    margin: 0 20px; /* Увеличиваем расстояние между кнопками */
+    margin: 0 30px; /* Увеличиваем расстояние между кнопками */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 25px; /* Увеличиваем padding для кнопок */
-    font-size: 18px;
+    padding: 20px 30px; /* Увеличиваем padding для кнопок */
+    font-size: 24px; /* Увеличиваем шрифт */
     display: block;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
@@ -62,12 +62,12 @@ nav ul li a:hover {
 .letter-board {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* Плитка 6x6 */
-    grid-gap: 10px;
-    margin-top: 20px;
-    max-width: 500px;
-    margin-left: auto;
+    grid-gap: 25px;
+    margin-top: 15px;
+    max-width: 45px;
+    margin-left: 750px;
     margin-right: auto;
-
+    justify-content: center;
 }
 
 .letter-btn {
