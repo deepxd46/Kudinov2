@@ -1,0 +1,140 @@
+/* Основной стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Стиль для шапки сайта */
+header {
+    background-color: #333;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly; /* Равномерное распределение кнопок */
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0 20px; /* Увеличиваем расстояние между кнопками */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px; /* Увеличиваем padding для кнопок */
+    font-size: 18px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #ff0;
+}
+
+.welcome-container {
+    text-align: center;
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+/* Контейнер для надписи "Введите слово" */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Отступ сверху */
+}
+/* Плитка с буквами */
+.letter-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Плитка 6x6 */
+    grid-gap: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.letter-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.letter-btn:hover {
+    background-color: #555;
+}
+
+/* Поле для ввода */
+#input-field {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 24px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Стиль для кнопки "Начать игру" */
+.start-btn {
+    margin-top: 30px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start-btn:hover {
+    background-color: #555;
+}
+
+/* Контейнер для кнопки "Начать игру" и таймера */
+.start-game-container {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    margin-top: 30px; /* Отступ сверху */
+}
+
+/* Стиль для таймера */
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.delete-btn {
+    margin-right: 20px; /* Отступ справа для кнопки "Удалить" */
+}
+
+/* Кнопка "Проверить слово" */
+.check-btn {
+    margin-left: 20px; /* Отступ слева для кнопки "Проверить слово" */
+}
