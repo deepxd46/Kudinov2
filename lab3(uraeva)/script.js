@@ -46,3 +46,14 @@ function startGame() {
         }
     }, 1000); // 1000 миллисекунд = 1 секунда
 }
+// Скрипт для переключения подсказок
+const toggle = document.getElementById('tips-toggle');
+const statusText = document.getElementById('tips-status');
+
+toggle.addEventListener('change', function() {
+    if (toggle.checked) {
+        statusText.textContent = 'Подсказки включены.';
+    } else {
+        statusText.textContent = 'Подсказки выключены.';
+    }
+});

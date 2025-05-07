@@ -25,12 +25,14 @@ nav ul {
     justify-content: center;
     margin: 0;
     padding: 0;
+    align-items: center; /* Выравнивание по вертикали */
 }
 
 nav ul li {
     margin: 0 15px;
 }
 
+/* Стили для ссылок в навигации */
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -42,6 +44,28 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #555;
+}
+
+/* Стили для выпадающего списка */
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Метки для выпадающего списка */
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 /* Контейнер для формы */
